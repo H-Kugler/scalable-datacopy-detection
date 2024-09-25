@@ -1,0 +1,15 @@
+name: masterthesis
+channels:
+  - defaults
+dependencies:
+  - ipykernel
+  - opentsne
+  - pytest
+  - python=3.12
+  - pytorch::pytorch
+  - scikit-learn
+  - seaborn
+  - torchaudio
+  - torchvision
+  - tqdm
+prefix: /opt/homebrew/Caskroom/miniconda/base/envs/masterthesis
