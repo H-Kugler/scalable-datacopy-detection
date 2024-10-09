@@ -516,7 +516,7 @@ class Memorizer(GenerativeModel):
         self.n_copying = n_copying
 
     def fit(self, X):
-        self.subset = X[np.random.choice(len(X), size=self.n_copying)]
+        self.subset = X[np.random.choice(len(X), size=self.n_copying, replace=False)]
         return self
 
     def sample(self, n, **kwargs):
